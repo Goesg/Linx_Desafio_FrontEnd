@@ -1,0 +1,192 @@
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 0px;
+  left: 0px;
+  width: 1500px;
+  height: 399px;
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+header h4 {
+  top: 69px;
+  left: 635px;
+  width: 227px;
+  height: 23px;
+  text-align: left;
+  font: normal normal normal 20px/24px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+header h1 {
+  top: 92px;
+  left: 571px;
+  width: 358px;
+  height: 48px;
+  text-align: center;
+  font: normal normal bold 40px/49px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+header h5 {
+  top: 164px;
+  left: 476px;
+  width: 548px;
+  height: 16px;
+  font: normal normal normal 14px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 5%;
+}
+
+.headerTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerButtons {
+  top: 230px;
+  left: 371px;
+  width: 769px;
+  height: 50px;
+  opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 7%;
+}
+
+.headerButtons button {
+  top: 230px;
+  left: 771px;
+  width: 160px;
+  height: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+/* BODY */
+
+
+/* SECTION - FORM BODY */
+
+.formBody {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+
+.textFormBody h2 {
+  top: 420px;
+  left: 290px;
+  width: 332px;
+  height: 23px;
+  text-align: left;
+  font: normal normal normal 20px/24px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+  margin-bottom: 6%;
+}
+
+.textFormBody  {
+    top: 473px;
+left: 290px;
+width: 520px;
+height: 220px;
+}
+
+.textFormBody p{
+    text-align: left;
+    font: normal normal normal 12px/18px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+label {
+  top: 420px;
+  left: 870px;
+  width: 58px;
+  height: 14px;
+  text-align: left;
+  font: normal normal normal 12px/14px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.inputText {
+  top: 441px;
+  left: 870px;
+  width: 340px;
+  height: 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 420px;
+    left: 870px;
+    width: 340px;
+    height: 258px;
+}
+
+.radioForm{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    width: 62%;
+}
+
+.formBody button{
+    top: 670px;
+    left: 870px;
+    width: 340px;
+    height: 39px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+
+/* SECTION - ESPECIAL SECTION */
+
+.especialSection {
+    margin-top: 5%;
+}
+
+.especialSection h3{
+    text-align: left;
+    font: normal normal bold 18px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.divTextHr hr {
+    width: 42%;
+}
+
+.divTextHr{
+    display: flex;
+}
