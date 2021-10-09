@@ -1,0 +1,257 @@
+/* HEADER */
+
+html {
+  top: 0px;
+  left: 0px;
+  width: 600px;
+  height: 973px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 0px;
+  left: -1px;
+  width: 601px;
+  height: 198px;
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+header h4 {
+  top: 31px;
+  left: 187px;
+  width: 227px;
+  height: 23px;
+
+  text-align: left;
+  font: normal normal normal 20px/24px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+header h1 {
+  top: 59px;
+  left: 121px;
+  width: 358px;
+  height: 48px;
+  text-align: left;
+  font: normal normal bold 40px/49px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+header h5 {
+  top: 116px;
+  left: 120px;
+  width: 360px;
+  height: 32px;
+  text-align: center;
+  font: normal normal normal 14px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 5%;
+}
+
+.headerTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BODY */
+
+/* SECTION - MENSAGESECTION */
+
+.mensageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mensageSection H2 {
+  top: 204px;
+  left: 21px;
+  width: 102px;
+  height: 23px;
+  text-align: left;
+  font: normal normal normal 20px/24px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.mensageSection p {
+  top: 236px;
+  left: 21px;
+  width: 563px;
+  height: 60px;
+  text-align: left;
+  font: normal normal normal 12px/18px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+/* SECTION - PRODUCTSFORYOU*/
+
+.productsForYou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.imgProduct {
+  top: 860px;
+  left: 286px;
+  width: 200px;
+  height: 150px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+.titleProduct {
+  top: 1024px;
+  left: 285px;
+  width: 111px;
+  height: 16px;
+  text-align: left;
+  font: normal normal normal 14px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+  margin-top: 6%;
+}
+
+.descriptionProduction {
+  top: 503px;
+  left: 80px;
+  width: 200px;
+  height: 60px;
+  text-align: left;
+  font: normal normal normal 12px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+  margin-top: 2.6%;
+}
+
+.priceProduction {
+  top: 1110px;
+  left: 286px;
+  width: 66px;
+  height: 14px;
+  text-align: left;
+  font: normal normal normal 12px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.discountPriceProduction {
+  top: 1130px;
+  left: 286px;
+  width: 96px;
+  height: 19px;
+  text-align: left;
+  font: normal normal bold 16px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.installmentPriceProduction {
+  top: 1156px;
+  left: 286px;
+  width: 88px;
+  height: 14px;
+  text-align: left;
+  font: normal normal normal 12px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+}
+
+.product button {
+  top: 1180px;
+  left: 286px;
+  width: 200px;
+  height: 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+  margin-top: 5%;
+  text-align: left;
+  font: normal normal normal 16px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonSeeMore {
+  top: 725px;
+  left: 111px;
+  width: 383px;
+  height: 39px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 16px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+  margin-top: 10%;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 2%;
+  top: 814px;
+  left: 3px;
+  width: 600px;
+  height: 158px;
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  font: normal normal normal 12px/18px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
