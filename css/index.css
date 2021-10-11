@@ -13,6 +13,42 @@ header {
   opacity: 1;
 }
 
+.divCutBackground {
+  width: 1500px;
+  height: 29px;
+  position: relative;
+  bottom: 73%;
+}
+
+.custom-shape-divider-bottom-1633802164 {
+  position: absolute;
+  bottom: 100.7999%;
+  left: 0;
+  width: 112%;
+  overflow: hidden;
+  line-height: 0;
+  height: 520%;
+}
+
+.custom-shape-divider-bottom-1633802164 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 275px;
+}
+
+.custom-shape-divider-bottom-1633802164 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1633802164 svg {
+    width: calc(300% + 1.3px);
+    height: 500px;
+  }
+}
+
 header h4 {
   top: 69px;
   left: 635px;
@@ -66,6 +102,16 @@ header h5 {
   margin-bottom: 7%;
 }
 
+.divButtonsHeaderDesktop {
+  display: flex;
+  justify-content: space-between;
+  width: 769px;
+}
+
+.divButtonsHeaderMobile {
+  display: none;
+}
+
 .headerButtons button {
   top: 230px;
   left: 771px;
@@ -90,7 +136,6 @@ header h5 {
 .formBody {
   display: flex;
   justify-content: center;
-  margin-top: 4%;
 }
 
 .textFormBody h2 {
@@ -207,6 +252,13 @@ label {
   margin-bottom: 3%;
 }
 
+.divInfoProduct{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 54%;
+}
+
 .containerProducts {
   display: flex;
   flex-direction: column;
@@ -240,7 +292,7 @@ label {
   opacity: 1;
 }
 
-.titleProduct {
+.nameProduct {
   top: 1024px;
   left: 285px;
   width: 111px;
@@ -250,9 +302,10 @@ label {
   letter-spacing: 0px;
   color: #888888;
   opacity: 1;
+  margin-top: 4%;
 }
 
-.descriptionProduction {
+.description {
   top: 1050px;
   left: 286px;
   width: 200px;
@@ -264,7 +317,7 @@ label {
   opacity: 1;
 }
 
-.priceProduction {
+.oldPrice {
   top: 1110px;
   left: 286px;
   width: 66px;
@@ -276,7 +329,7 @@ label {
   opacity: 1;
 }
 
-.discountPriceProduction {
+.price {
   top: 1130px;
   left: 286px;
   width: 96px;
@@ -288,7 +341,7 @@ label {
   opacity: 1;
 }
 
-.installmentPriceProduction {
+.installment {
   top: 1156px;
   left: 286px;
   width: 88px;
@@ -358,7 +411,6 @@ label {
   letter-spacing: 0px;
   color: #888888;
   opacity: 1;
-  
 }
 
 .rowFormShare {
@@ -385,26 +437,293 @@ label {
 
 /* FOOTER */
 
-footer{
+footer {
   margin-top: 5%;
   top: 2151px;
-left: 0px;
-height: 293px;
-background: #707070 0% 0% no-repeat padding-box;
-border: 1px solid #707070;
-opacity: 1;
-display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  left: 0px;
+  height: 293px;
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer p {
   text-align: center;
-font: normal normal normal 12px/18px Helvetica Neue;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
+  font: normal normal normal 12px/18px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
 }
 
+/* MOBILE VERSION */
+
+@media (max-width: 500px) {
+  .divCutBackground {
+    width: 1502px;
+    height: 29px;
+    position: relative;
+    bottom: 0%;
+  }
+  .custom-shape-divider-bottom-1633802164 {
+    position: absolute;
+    bottom: 82.7999%;
+    left: 0;
+    width: 32%;
+    overflow: hidden;
+    line-height: 0;
+    height: 538%;
+  }
+  header {
+    top: 0px;
+    left: -1px;
+    width: 420px;
+    height: 398px;
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+  }
+
+  .headerTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h4 {
+    top: 66px;
+    left: 16px;
+    width: 227px;
+    height: 23px;
+    text-align: left;
+    font: normal normal normal 20px/24px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  header h1 {
+    top: 84px;
+    left: 16px;
+    width: 358px;
+    height: 48px;
+    text-align: left;
+    font: normal normal bold 40px/49px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  header h5 {
+    top: 141px;
+    left: 16px;
+    width: 359px;
+    height: 32px;
+    text-align: left;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .divButtonsHeaderDesktop {
+    display: none;
+  }
+
+  .divButtonsHeaderMobile {
+    display: flex;
+    margin-bottom: 5%;
+    width: 47%;
+  }
+
+  .headerButtons {
+    z-index: 1;
+    top: 230px;
+    left: 371px;
+    width: 769px;
+    height: 50px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12%;
+  }
+
+  .headerButtons button {
+    margin-right: 5%;
+  }
+
+  body {
+    top: 0px;
+    left: 0px;
+    width: 420px;
+    height: 2521px;
+  }
+  .divMainForm {
+    width: 385px;
+  }
+  .formBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    align-items: center;
+  }
+
+  .textFormBody {
+    top: 467px;
+    left: 16px;
+    width: 386px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textFormBody p {
+    top: 467px;
+    left: 16px;
+    width: 386px;
+    height: 220px;
+  }
+
+  .divTextHr {
+    width: 420px;
+  }
+
+  .divTextHr hr {
+    margin-right: 3%;
+    width: 25%;
+    margin-left: 3%;
+  }
+  .rowProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 390px;
+    align-items: flex-start;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 130px;
+    margin-bottom: 8%;
+    width: 100%;
+  }
+
+  .imgProduct {
+    top: 1139px;
+    left: 10px;
+    width: 160px;
+    height: 129px;
+  }
+
+  .product button {
+    top: 1238px;
+    left: 202px;
+    width: 185px;
+    height: 30px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+  }
+
+  .divInfoProduct {
+    height: 129px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .nameProduct {
+    top: 1139px;
+    left: 202px;
+    width: 111px;
+    height: 16px;
+    margin-top: 0;
+  }
+
+  .oldPrice {
+    top: 1168px;
+    left: 202px;
+    width: 66px;
+    height: 14px;
+  }
+  .price {
+    top: 1188px;
+    left: 202px;
+    width: 96px;
+    height: 19px;
+    height: 7px;
+  }
+
+  .installment {
+    top: 1214px;
+    left: 202px;
+    width: 88px;
+    height: 14px;
+  }
+
+  .shareNewsSection h3 {
+    top: 1966px;
+    left: 109px;
+    width: 204px;
+
+    text-align: left;
+    font: normal normal bold 18px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+  }
+
+  .shareNewsSection hr {
+    width: 23%;
+  }
+
+  .shareNewsSection p {
+    top: 2016px;
+    left: 17px;
+    width: 386px;
+    height: 32px;
+    text-align: center;
+    font: normal normal normal 14px/16px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+  }
+
+  .shareNewsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rowFormShare {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 63%;
+    margin-top: 8%;
+}
+.shareForm{
+  width: 250px;
+}
+
+.containerFormShare{
+  width: 69%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+}
