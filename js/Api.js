@@ -1,3 +1,4 @@
+// Classe para retornar os dados da api
 class Consumer{
     static getJson(url){
         return new Promise((resolve,reject)=>{
@@ -11,6 +12,7 @@ class Consumer{
     };
 };
 
+// Classe para retornar arrays dos produtos 
 class Conversor{
     static async JsonToArray(json){
         try{           
@@ -32,7 +34,9 @@ class Conversor{
     };
 };
 
+// Classe para inserir os produtos no html
 class Inserter{
+    // o metodo inserte recebe o local onde será inserido os produtos e a lista de produtos
     static async inserIntoHtml(into,dataProducts){
         dataProducts.forEach((item)=> {
             $(into).append(`<div class="product"> 
@@ -51,6 +55,8 @@ class Inserter{
     };
 };
 
+// a classe Product uni as classes Consumer e Conversor
+// recebendo a url da api e retornando no final a lista de produtos
 class Product {
     static async getProducts(url){
         try{
