@@ -242,7 +242,7 @@ label {
 }
 
 .divTextHr hr {
-  width: 38.7%;
+  width: 35.7%;
 }
 
 .divTextHr {
@@ -295,7 +295,7 @@ label {
 .nameProduct {
   top: 1024px;
   left: 285px;
-  width: 111px;
+  width: 200px;
   height: 16px;
   text-align: left;
   font: normal normal normal 14px/16px Helvetica Neue;
@@ -365,6 +365,18 @@ label {
 }
 
 .buttonMoreProductions {
+  top: 1651px;
+  left: 620px;
+  width: 260px;
+  height: 39px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.buttonSeeLess{
+  display: none;
   top: 1651px;
   left: 620px;
   width: 260px;
