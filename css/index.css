@@ -14,7 +14,7 @@ header {
 }
 
 .divCutBackground {
-  width: 1500px;
+  max-width: 1270px;
   height: 29px;
   position: relative;
   bottom: 73%;
@@ -33,7 +33,7 @@ header {
 .custom-shape-divider-bottom-1633802164 svg {
   position: relative;
   display: block;
-  width: calc(300% + 1.3px);
+  width: 345%;
   height: 275px;
 }
 
@@ -473,7 +473,7 @@ footer p {
 
 @media (max-width: 500px) {
   .divCutBackground {
-    width: 1502px;
+    max-width: 420px;
     height: 29px;
     position: relative;
     bottom: 0%;
