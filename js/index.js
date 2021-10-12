@@ -1,93 +1,26 @@
-fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1`)
-.then(resposta => resposta.json()) 
-.then((dados)=>{
-    $('.containerProducts').prepend(`<div class="rowProducts" id="rowProducts1"></div>`)
-    $('.containerProducts').append(`<div class="rowProducts" id="rowProducts2"></div>`)
-    let {products} = dados
-    let [item0,item1,item2,item3,item4,item5,item6,item7] = products
-    let products1 = [item0,item1,item2,item3]   
-    let products2 = [item4,item5,item6,item7]
-    console.log(products1)
-    products1.forEach((item)=>{
-        $(`#rowProducts1`).append(`<div class="product"> 
-            <img class="imgProduct" src="${item.image}">
-            <div class="divInfoProduct">
-            <h5 class="nameProduct">${item.name}</h5>
-            <p class="description">${item.description}</p>
-            <p class="oldPrice">De: R$${item.oldPrice}</p>
-            <p class="price"> Por: R$${item.price}</p>
-            <p class="installment"> ou ${item.installments.count}x de R$${item.installments.value}</p>
-            <button>Comprar</button>
-            </div> 
-            </div>`
-        )
-               
-    })
+import {Product , Inserter} from './Api.js'
 
-    products2.forEach((item)=>{
-        $(`#rowProducts2`).append(`<div class="product"> 
-            <img class="imgProduct" src="${item.image}">
-            <div class="divInfoProduct">
-            <h5 class="nameProduct">${item.name}</h5>
-            <p class="description">${item.description}</p>
-            <p class="oldPrice">De: R$${item.oldPrice}</p>
-            <p class="price"> Por: R$${item.price}</p>
-            <p class="installment"> ou ${item.installments.count}x de R$${item.installments.value}</p>
-            <button>Comprar</button>
-            </div> 
-            </div>`
-        )
-               
-    })
-})   
+let main = async ()=>{
+    try{
+        let productsApi = await Product.getProducts("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1")
+        let {products1,products2} = await productsApi
+        $('.containerProducts').prepend(`<div class="rowProducts" id="rowProducts1"></div>`)
+        $('.containerProducts').append(`<div class="rowProducts" id="rowProducts2"></div>`)
+        Inserter.inserIntoHtml('#rowProducts1',products1)
+        Inserter.inserIntoHtml('#rowProducts2',products2)   
+    }catch(err){console.log(err)}
+}
+main()
 
-
-
-$('.buttonMoreProductions').click(()=>{
+$('.buttonMoreProductions').click(async()=>{
+    let productsApi = await Product.getProducts("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=2")
+    let {products1,products2} = await productsApi
     $('.buttonMoreProductions').css('display','none')
     $('.buttonSeeLess').css('display','block')
-    fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=2`)
-    .then(resposta => resposta.json()) 
-    .then((dados)=>{
     $('.containerProducts').append(`<div class="rowProducts" id="rowProducts3"></div>`)
     $('.containerProducts').append(`<div class="rowProducts" id="rowProducts4"></div>`)
-    let {products} = dados
-    let [item0,item1,item2,item3,item4,item5,item6,item7] = products
-    let products1 = [item0,item1,item2,item3]   
-    let products2 = [item4,item5,item6,item7]
-    console.log(products1)
-    products1.forEach((item)=>{
-        $(`#rowProducts3`).append(`<div class="product"> 
-            <img class="imgProduct" src="${item.image}">
-            <div class="divInfoProduct">
-            <h5 class="nameProduct">${item.name}</h5>
-            <p class="description">${item.description}</p>
-            <p class="oldPrice">De: R$${item.oldPrice}</p>
-            <p class="price"> Por: R$${item.price}</p>
-            <p class="installment"> ou ${item.installments.count}x de R$${item.installments.value}</p>
-            <button>Comprar</button>
-            </div> 
-            </div>`
-        )
-               
-    })
-
-    products2.forEach((item)=>{
-        $(`#rowProducts4`).append(`<div class="product"> 
-            <img class="imgProduct" src="${item.image}">
-            <div class="divInfoProduct">
-            <h5 class="nameProduct">${item.name}</h5>
-            <p class="description">${item.description}</p>
-            <p class="oldPrice">De: R$${item.oldPrice}</p>
-            <p class="price"> Por: R$${item.price}</p>
-            <p class="installment"> ou ${item.installments.count}x de R$${item.installments.value}</p>
-            <button>Comprar</button>
-            </div> 
-            </div>`
-        )
-               
-    })
-})   
+        Inserter.inserIntoHtml('#rowProducts3',products1)
+        Inserter.inserIntoHtml('#rowProducts4',products2)    
 })
 
 $('.buttonSeeLess').click(()=>{
