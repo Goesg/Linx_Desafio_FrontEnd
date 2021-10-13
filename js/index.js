@@ -1,4 +1,6 @@
-import {Product , Inserter} from './Api.js'
+import {Product , Inserter} from './Api.js' 
+
+import {checkerEmail , checkerCpf} from './Validation.js'
 
 // a função useApi se utiliza das classes importadas para 
 // fazer o consumo da api e renderizar as fileiras de produtos no html
@@ -38,6 +40,32 @@ $('.buttonSeeLess').click(()=>{
     $('.buttonMoreProductions').css('display','block')
 })
 
+// ao tirar o foco do input ele valida o email do usuario
+$('#inputEmail').blur( async ()=>{
+    try{
+        let email = await $('#inputEmail').val()
+        let resultEmail = await checkerEmail.checkerEmail(email)
+        if (resultEmail) alert(resultEmail)
+    }catch(err){console.log(err)}
+})
+
+// ao tirar o foco do input ele valida o email do usuario
+$('#inputEmailShare').blur( async ()=>{
+    try{
+        let email = await $('#inputEmailShare').val()
+        let resultEmail = await checkerEmail.checkerEmail(email)
+        if (resultEmail) alert(resultEmail)
+    }catch(err){console.log(err)}
+})
+
+// ao tirar o foco do input ele valida o cpf do usuario
+$('#inputCpf').blur( async ()=>{
+    try{
+        let cpf = await $('#inputCpf').val()
+        let resultCpf = await checkerCpf.checkerCpf(cpf)
+        if (resultCpf) alert(resultCpf)
+    }catch(err){console.log(err)}
+})
 
 
 

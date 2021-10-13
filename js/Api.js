@@ -55,7 +55,7 @@ class Inserter{
     };
 };
 
-// a classe Product uni as classes Consumer e Conversor
+// a classe Product é a união as classes Consumer e Conversor
 // recebendo a url da api e retornando no final a lista de produtos
 class Product {
     static async getProducts(url){

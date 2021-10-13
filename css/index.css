@@ -24,7 +24,7 @@ header {
   position: absolute;
   bottom: 100.7999%;
   left: 0;
-  width: 112%;
+  width: 124%;
   overflow: hidden;
   line-height: 0;
   height: 520%;
@@ -471,18 +471,25 @@ footer p {
 
 /* MOBILE VERSION */
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .divCutBackground {
+    display: none;
     max-width: 420px;
     height: 29px;
     position: relative;
     bottom: 0%;
   }
+  .custom-shape-divider-bottom-1633802164 svg {
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 275px;
+}
   .custom-shape-divider-bottom-1633802164 {
     position: absolute;
     bottom: 82.7999%;
     left: 0;
-    width: 32%;
+    width: 113%;
     overflow: hidden;
     line-height: 0;
     height: 538%;
