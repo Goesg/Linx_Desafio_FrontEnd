@@ -8,7 +8,7 @@ https://serene-lumiere-727f0f.netlify.app/
 
 ## Aviso ⚠️
 ### O projeto foi construido com o uso da modularização de classes, com o intuito de se obter uma melhor estrutura para o código.
-### Devido a isso é necessário a utilização de um servidor web para que a modularização funcione e não aconteça erros. Caso o projeto seja aberto no navegador atravez do caminho local da máquina a renderização da api não irá funcionar!
+### Devido a isso é necessário a utilização de um servidor web para que a modularização funcione e não aconteça erros. Caso o projeto seja aberto no navegador atravéz do caminho local da máquina a renderização da api não irá funcionar!
 
 ## Instruções de uso:
  Após baixar o projeto, segue-se algumas recomedações e sugestões para a sua visualização atravez de um servidor local:
