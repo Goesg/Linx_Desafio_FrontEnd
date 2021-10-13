@@ -23,7 +23,7 @@ class checkerCpf{
             if(cpf == undefined || cpf == null || cpf == ""){
                 return `Obrigatório a informação de algum cpf`
             };
-            let regExpcpf = /[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}/
+            let regExpcpf = /^[0-9]{3}[0-9]{3}[0-9]{3}[0-9]{2}$/
             if(regExpcpf.test(cpf) == false){
                 return `Insira um cpf válido`
             };
